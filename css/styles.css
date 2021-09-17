@@ -635,7 +635,7 @@ img {
   fill: black;
   background-color: unset;
 
-  padding: 4px 0;
+  padding: 6px 0;
   position: absolute;
   top: 8px;
   right: 8px;
@@ -681,7 +681,7 @@ img {
 
   transition: border-color var(--time-anim) var(--trform-style);
 }
-.form-icons {
+.form-item__icons {
   width: 18px;
   height: 18px;
   fill: var(--maintext-color);
@@ -718,14 +718,14 @@ textarea::placeholder {
 .form-item textarea:focus {
   border-color: var(--active-color);
 }
-.form-item input:hover + svg,
-.form-item input:focus + svg {
+.form-item input:hover + .form-item__icon,
+.form-item input:focus + .form-item__icon {
   fill: var(--active-color);
 }
 .terms-block {
   margin-bottom: 30px;
 }
-.terms-label {
+.terms-block__label {
   display: flex;
   justify-content: center;
   padding-left: 20px;
@@ -734,10 +734,10 @@ textarea::placeholder {
   letter-spacing: 0.03em;
   position: relative;
 }
-.terms-label a {
+.terms-block__label a {
   color: var(--active-color);
 }
-.terms-input {
+.terms-block__input {
   appearance: none;
 }
 .icon-check {
@@ -752,7 +752,7 @@ textarea::placeholder {
   top: 2px;
   left: 12px;
 }
-.terms-input:checked + span .icon-check {
+.terms-block__input:checked + span .icon-check {
   background-color: var(--active-color);
   border-color: var(--active-color);
   box-shadow: 0 4px 4px #00000040;
@@ -775,5 +775,3 @@ textarea::placeholder {
   line-height: 1.87;
   letter-spacing: 0.06em;
 }
-/* .modal-item [placeholder] {
-} */
