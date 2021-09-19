@@ -8,9 +8,8 @@
   color: #757575;
   text-decoration: none;
   transition: color var(--time-anim) var(--trform-style);
-}
-
-.link:hover,
-.link:focus {
-  color: var(--active-color);
+  &:focus,
+  &:hover {
+    color: var(--active-color);
+  }
 }

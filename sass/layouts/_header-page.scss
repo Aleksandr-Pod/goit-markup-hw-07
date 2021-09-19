@@ -5,12 +5,13 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  & .container {
+    display: flex;
+    flex-basis: auto;
+    align-items: center;
+  }
 }
-.header-page .container {
-  display: flex;
-  flex-basis: auto;
-  align-items: center;
-}
+
 .header-nav {
   display: flex;
   align-items: center;
@@ -18,15 +19,16 @@
 .header-menu {
   display: flex;
   margin-left: 94px;
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  &__link {
+    padding: 32px 0;
+    color: var(--maintext-color);
+    position: relative;
+  }
 }
-.header-menu-item:not(:last-child) {
-  margin-right: 50px;
-}
-.header-menu-link {
-  padding: 32px 0;
-  color: var(--maintext-color);
-  position: relative;
-}
+
 .current::after {
   content: "";
   position: absolute;
@@ -40,29 +42,24 @@
 .header-addr {
   display: flex;
   margin-left: auto;
-}
-.link-envelope,
-.link-smartphone {
-  display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  align-items: center;
-}
-.headder-addr-item + .headder-addr-item {
-  margin-left: 50px;
+  &__item + &__item {
+    margin-left: 50px;
+  }
 }
 
-.icon-envelope,
-.icon-smartphone {
-  fill: #757575;
-  margin-right: 10px;
-}
-
-.link-envelope:hover .icon-envelope,
-.link-envelope:focus .icon-envelope {
-  fill: var(--active-color);
-}
-.link-smartphone:hover .icon-smartphone,
-.link-smartphone:focus .icon-smartphone {
-  fill: var(--active-color);
+@each $icon in envelope, smartphone {
+  .link-#{$icon} {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+    &__icon {
+      fill: #757575;
+      margin-right: 10px;
+    }
+    &:hover &__icon,
+    &:focus &__icon {
+      fill: var(--active-color);
+    }
+  }
 }

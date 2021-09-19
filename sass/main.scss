@@ -1,6 +1,6 @@
 @import "./utils/variables";
 @import "./utils/hidden";
-
+@import "./utils/mixin";
 @import "./base/reset";
 
 @import "./components/container";
@@ -16,7 +16,5 @@
 @import "./layouts/soc-icons-block";
 @import "./layouts/clients";
 @import "./layouts/footer";
-
 @import "./layouts/gallery";
-
 @import "./layouts/modal";
