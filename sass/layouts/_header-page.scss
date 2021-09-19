@@ -45,20 +45,19 @@
   &__item + &__item {
     margin-left: 50px;
   }
-}
-
-@each $icon in envelope, smartphone {
-  .link-#{$icon} {
-    display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    align-items: center;
-    &__icon {
+  @each $icon in envelope, smartphone {
+    &__link-#{$icon} {
+      display: flex;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      align-items: center;
+    }
+    &__icon-#{$icon} {
       fill: #757575;
       margin-right: 10px;
     }
-    &:hover &__icon,
-    &:focus &__icon {
+    &__link-#{$icon}:hover &__icon-#{$icon},
+    &__link-#{$icon}:focus &__icon-#{$icon} {
       fill: var(--active-color);
     }
   }
