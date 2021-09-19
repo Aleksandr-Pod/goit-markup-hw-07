@@ -1,4 +1,4 @@
-# goit-markup-hw-06
+# goit-markup-hw-07
 
 Forms and Elements
-https://aleksandr-pod.github.io/goit-markup-hw-06/
+https://aleksandr-pod.github.io/goit-markup-hw-07/
