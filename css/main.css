@@ -44,8 +44,8 @@ img {
 
 .list {
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 .link {
@@ -133,37 +133,20 @@ img {
   margin-left: 50px;
 }
 
-.header-addr__link-envelope {
+.header-addr__link {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
   align-items: center;
 }
 
-.header-addr__icon-envelope {
+.header-addr__icon {
   fill: #757575;
   margin-right: 10px;
 }
 
-.header-addr__link-envelope:hover .header-addr__icon-envelope,
-.header-addr__link-envelope:focus .header-addr__icon-envelope {
-  fill: var(--active-color);
-}
-
-.header-addr__link-smartphone {
-  display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  align-items: center;
-}
-
-.header-addr__icon-smartphone {
-  fill: #757575;
-  margin-right: 10px;
-}
-
-.header-addr__link-smartphone:hover .header-addr__icon-smartphone,
-.header-addr__link-smartphone:focus .header-addr__icon-smartphone {
+.header-addr__link:hover .header-addr__icon,
+.header-addr__link:focus .header-addr__icon {
   fill: var(--active-color);
 }
 
